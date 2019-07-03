@@ -4,7 +4,7 @@ from plotly.graph_objs import Scatter, Layout
 
 content = ""
 
-list = list()
+list1 = list()
 list2 = ""
 
 with open(sys.argv[1] + ".csv",'r') as data:
@@ -12,12 +12,12 @@ with open(sys.argv[1] + ".csv",'r') as data:
         if line.strip() == '--------------------------------------------------------------------------------------------------------' or line.strip() == '-------------------------------------------------------------------------------------------------------':
             break
     for line in data:
-        lista.append(line)
+        list1.append(line)
 
 
 
 
-lista2 = [elem.strip('\n') for elem in list]
+lista2 = [elem.strip('\n') for elem in list1]
 lista2 = [s.lstrip("0") for s in list2]
 
 
